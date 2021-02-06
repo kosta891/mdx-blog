@@ -33,7 +33,7 @@ const PostTemplate = ({data}) => {
           <Banner />
         </article>
       </Wrapper>
-    </Layout>
+    </Layout> 
   )
 }
 export const query = graphql`
