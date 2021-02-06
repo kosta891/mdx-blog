@@ -1,0 +1,77 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2020-05-27
+author: koleri
+category: gatsby
+readTime: 10
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../../components/Complete'
+
+
+
+# my first mdx
+
+Tilde hot chicken seitan williamsburg typewriter shabby chic plaid taxidermy. Four dollar toast beard echo park, authentic celiac mustache bitters tacos aesthetic tilde craft beer quinoa gastropub keytar franzen. Pickled tofu organic you probably haven't heard of them, truffaut kombucha schlitz single-origin coffee chartreuse raclette shabby chic. Synth cronut kogi authentic. Cloud bread knausgaard ennui shoreditch echo park, fingerstache williamsburg. Salvia taiyaki pork belly poke, lomo cliche beard scenester tattooed celiac. Messenger bag chillwave enamel pin, disrupt +1 heirloom af taiyaki hella kinfolk freegan pug single-origin coffee.\_
+
+<div className="code">
+
+```js 
+const firstName = 'Koleri'
+const firstName = 'Koleri'
+```
+
+</div>
+
+<div className='nice-text'>
+
+<h3>Nice text</h3>
+
+<FiInfo className='nice-text-icon'></FiInfo>
+
+Cliche fanny pack raw denim pitchfork. Biodiesel pickled quinoa authentic selvage intelligentsia bushwick occupy tumblr VHS brunch cornhole master cleanse. Pork belly cronut wolf iceland selfies biodiesel 90's bushwick chillwave knausgaard vegan activated charcoal vape etsy austin. YOLO hashtag viral organic tousled pabst health goth. Biodiesel dreamcatcher authentic readymade yr chambray heirloom. Gastropub woke kitsch cardigan. Lomo meggings truffaut, tumeric umami artisan hell of normcore 90's woke viral tofu cred.
+
+</div>
+
+<h2> React Component </h2>
+
+<Counter /> 
+
+```jsx
+
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+
+```
+
+<LikeButton />
+
+![nice image](./images/gatsby-1.png)
+
+<Link to='/posts' className='btn center-btn'>all posts</Link>
+
+
+
